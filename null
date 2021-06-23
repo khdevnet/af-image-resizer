@@ -1,0 +1,8 @@
+
+[91mNew-Item: [0mC:\projects\af-image-resizer\run-cosmodb.ps1:1
+[96mLine |
+[96m   1 | [0m [96mmd $env:LOCALAPPDATA\CosmosDBEmulator\bind-mount 2>null[0m
+[96m     | [91m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mAn item with the specified name C:\Users\AntonShcherbyna\AppData\Local\CosmosDBEmulator\bind-mount
+[96m     | [91malready exists.
+[0m
