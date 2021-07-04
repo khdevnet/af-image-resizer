@@ -41,6 +41,7 @@ namespace AfImageResizer
             [OrchestrationTrigger] IDurableOrchestrationContext context)
         {
             var model = context.GetInput<UploadImage>();
+            //TODO: make idempotence
             var metadata = await context.CallActivityAsync<ImageMetadata>(nameof(SaveToStorage), model);
             var id = await context.CallActivityAsync<string>(nameof(SaveToDb), metadata);
             return id;

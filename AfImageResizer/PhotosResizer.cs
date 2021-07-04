@@ -28,7 +28,7 @@ namespace AfImageResizer
 
             await originalContainer.CreateIfNotExistsAsync();
 
-
+            // TODO: Fan out/fan in??
             await ResizeImageAndSave(orgImgBlob, originalContainer, PhotosCommon.MdImgSizeKey);
             await ResizeImageAndSave(orgImgBlob, originalContainer, PhotosCommon.SmImgSizeKey);
 
